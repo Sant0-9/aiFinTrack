@@ -1,0 +1,167 @@
+graph TD
+    START[Project Initialization] --> SETUP[Setup & Configuration]
+    
+    %% Phase 1: Foundation
+    SETUP --> NEXT[Next.js 14 App Router]
+    SETUP --> TS[TypeScript Configuration]
+    SETUP --> TAILWIND[Tailwind CSS Setup]
+    SETUP --> DB_DESIGN[Database Schema Design]
+    
+    NEXT --> AUTH_SETUP[Authentication Setup]
+    TS --> AUTH_SETUP
+    TAILWIND --> AUTH_SETUP
+    DB_DESIGN --> AUTH_SETUP
+    
+    %% Phase 2: Authentication & Database
+    AUTH_SETUP --> NEXTAUTH[NextAuth.js Integration]
+    AUTH_SETUP --> PRISMA[Prisma ORM Setup]
+    AUTH_SETUP --> MIGRATIONS[Database Migrations]
+    
+    NEXTAUTH --> CORE_FEATURES[Core Application Features]
+    PRISMA --> CORE_FEATURES
+    MIGRATIONS --> CORE_FEATURES
+    
+    %% Database Schema Branch
+    DB_DESIGN --> USERS_TABLE[Users Table]
+    DB_DESIGN --> TRANSACTIONS_TABLE[Transactions Table]
+    DB_DESIGN --> CATEGORIES_TABLE[Categories Table]
+    DB_DESIGN --> BUDGETS_TABLE[Budgets Table]
+    DB_DESIGN --> AI_INTERACTIONS[AI Interactions Table]
+    DB_DESIGN --> SAVINGS_GOALS[Savings Goals Table]
+    DB_DESIGN --> SPENDING_PLANS[Spending Plans Table]
+    
+    USERS_TABLE --> PRISMA
+    TRANSACTIONS_TABLE --> PRISMA
+    CATEGORIES_TABLE --> PRISMA
+    BUDGETS_TABLE --> PRISMA
+    AI_INTERACTIONS --> PRISMA
+    SAVINGS_GOALS --> PRISMA
+    SPENDING_PLANS --> PRISMA
+    
+    %% Phase 3: AI Core System
+    CORE_FEATURES --> AI_SERVICE[OpenAI Service Layer]
+    AI_SERVICE --> PROMPT_ENGINE[AI Prompt Engineering]
+    AI_SERVICE --> CONVERSATION_MEMORY[Conversation Memory]
+    AI_SERVICE --> CONTEXT_INJECTION[Context Injection System]
+    
+    PROMPT_ENGINE --> AI_COACH[AI Financial Coach]
+    CONVERSATION_MEMORY --> AI_COACH
+    CONTEXT_INJECTION --> AI_COACH
+    
+    %% Phase 4: Transaction Management
+    CORE_FEATURES --> TRANSACTION_CRUD[Transaction CRUD Operations]
+    CORE_FEATURES --> CATEGORY_MGMT[Category Management]
+    CORE_FEATURES --> BUDGET_TRACKING[Budget Tracking System]
+    CORE_FEATURES --> DASHBOARD[Main Dashboard]
+    
+    TRANSACTION_CRUD --> AI_CATEGORIZATION[AI Auto-Categorization]
+    CATEGORY_MGMT --> AI_CATEGORIZATION
+    AI_COACH --> AI_CATEGORIZATION
+    
+    %% Phase 5: AI Prevention System
+    AI_COACH --> SPENDING_ANALYSIS[Real-time Spending Analysis]
+    SPENDING_ANALYSIS --> PRE_PURCHASE[Pre-Purchase Consultation]
+    SPENDING_ANALYSIS --> DAILY_MONITORING[Daily Limit Monitoring]
+    SPENDING_ANALYSIS --> ALERT_SYSTEM[Smart Alert System]
+    SPENDING_ANALYSIS --> ACHIEVEMENT_ENGINE[Achievement Engine]
+    
+    PRE_PURCHASE --> NECESSITY_SCORER[Necessity Scoring Algorithm]
+    DAILY_MONITORING --> PROGRESSIVE_ALERTS[Progressive Alert Levels]
+    ALERT_SYSTEM --> INTERVENTION_SYSTEM[Intervention System]
+    ACHIEVEMENT_ENGINE --> MOTIVATION_SYSTEM[Motivation & Rewards]
+    
+    %% Phase 6: Analytics Engine
+    BUDGET_TRACKING --> ANALYTICS_ENGINE[Analytics Processing Engine]
+    AI_CATEGORIZATION --> ANALYTICS_ENGINE
+    ANALYTICS_ENGINE --> BEHAVIORAL_ANALYSIS[Behavioral Pattern Analysis]
+    ANALYTICS_ENGINE --> PREDICTIVE_MODELING[Predictive Financial Modeling]
+    ANALYTICS_ENGINE --> FINANCIAL_INSIGHTS[AI-Generated Insights]
+    
+    BEHAVIORAL_ANALYSIS --> SPENDING_PATTERNS[Spending Pattern Recognition]
+    PREDICTIVE_MODELING --> FORECAST_ENGINE[Financial Forecasting]
+    FINANCIAL_INSIGHTS --> RECOMMENDATION_ENGINE[Personalized Recommendations]
+    
+    %% Phase 7: Chat Interface
+    AI_COACH --> CHAT_INTERFACE[Conversational AI Interface]
+    CHAT_INTERFACE --> NLP_PROCESSOR[Natural Language Processing]
+    CHAT_INTERFACE --> RESPONSE_GENERATOR[Contextual Response Generation]
+    CHAT_INTERFACE --> PROACTIVE_COACHING[Proactive Coaching System]
+    
+    NLP_PROCESSOR --> INTENT_RECOGNITION[Intent Recognition]
+    RESPONSE_GENERATOR --> PERSONALITY_ENGINE[AI Personality Engine]
+    PROACTIVE_COACHING --> NOTIFICATION_SCHEDULER[Smart Notification Scheduler]
+    
+    %% Phase 8: Mobile & Frontend
+    DASHBOARD --> MOBILE_INTERFACE[Mobile-First Interface]
+    CHAT_INTERFACE --> MOBILE_INTERFACE
+    MOBILE_INTERFACE --> PWA_SETUP[Progressive Web App]
+    MOBILE_INTERFACE --> GESTURE_CONTROLS[Touch Gesture Controls]
+    MOBILE_INTERFACE --> VOICE_INPUT[Voice Input System]
+    
+    PWA_SETUP --> OFFLINE_SUPPORT[Offline Functionality]
+    GESTURE_CONTROLS --> INTERACTION_DESIGN[Advanced Interactions]
+    VOICE_INPUT --> SPEECH_RECOGNITION[Speech-to-Text Processing]
+    
+    %% Phase 9: Production Systems
+    MOBILE_INTERFACE --> PRODUCTION_PREP[Production Preparation]
+    PRODUCTION_PREP --> SECURITY_LAYER[Security Implementation]
+    PRODUCTION_PREP --> PERFORMANCE_OPT[Performance Optimization]
+    PRODUCTION_PREP --> MONITORING_SETUP[Monitoring & Analytics]
+    PRODUCTION_PREP --> DEPLOYMENT_CONFIG[Vercel Deployment Config]
+    
+    SECURITY_LAYER --> DATA_ENCRYPTION[Data Encryption]
+    SECURITY_LAYER --> API_SECURITY[API Security & Rate Limiting]
+    PERFORMANCE_OPT --> CACHING_STRATEGY[Intelligent Caching]
+    PERFORMANCE_OPT --> CODE_SPLITTING[Code Splitting & Lazy Loading]
+    
+    %% AI Cost Management
+    AI_SERVICE --> COST_OPTIMIZATION[AI Cost Management]
+    COST_OPTIMIZATION --> REQUEST_BATCHING[Request Batching]
+    COST_OPTIMIZATION --> RESPONSE_CACHING[Response Caching]
+    COST_OPTIMIZATION --> FALLBACK_SYSTEM[Fallback Responses]
+    
+    %% Final Integration
+    DEPLOYMENT_CONFIG --> PRODUCTION_DEPLOY[Production Deployment]
+    DATA_ENCRYPTION --> PRODUCTION_DEPLOY
+    API_SECURITY --> PRODUCTION_DEPLOY
+    CACHING_STRATEGY --> PRODUCTION_DEPLOY
+    
+    PRODUCTION_DEPLOY --> LAUNCH[Application Launch]
+    
+    %% Post-Launch
+    LAUNCH --> POST_LAUNCH[Post-Launch Enhancements]
+    POST_LAUNCH --> OCR_INTEGRATION[Receipt OCR Integration]
+    POST_LAUNCH --> BANK_INTEGRATION[Bank Account Integration]
+    POST_LAUNCH --> SOCIAL_FEATURES[Social & Sharing Features]
+    POST_LAUNCH --> INVESTMENT_TRACKING[Investment Portfolio Tracking]
+    
+    %% API Integrations
+    AI_SERVICE -.-> OPENAI_API[OpenAI API]
+    BANK_INTEGRATION -.-> PLAID_API[Plaid Banking API]
+    OCR_INTEGRATION -.-> OCR_SERVICE[OCR Service API]
+    DEPLOYMENT_CONFIG -.-> VERCEL_PLATFORM[Vercel Platform]
+    
+    %% Data Flow Indicators
+    USERS_TABLE -.-> USER_DATA[User Profile Data]
+    TRANSACTIONS_TABLE -.-> TRANSACTION_DATA[Financial Transaction Data]
+    AI_INTERACTIONS -.-> AI_CONTEXT[AI Conversation Context]
+    SAVINGS_GOALS -.-> GOAL_DATA[Financial Goal Data]
+    
+    %% Timeline Classifications
+    classDef foundation fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
+    classDef ai_core fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
+    classDef features fill:#e8f5e8,stroke:#388e3c,stroke-width:2px
+    classDef analytics fill:#fff3e0,stroke:#f57c00,stroke-width:2px
+    classDef interface fill:#fce4ec,stroke:#c2185b,stroke-width:2px
+    classDef production fill:#f1f8e9,stroke:#689f38,stroke-width:2px
+    classDef database fill:#e0f2f1,stroke:#00796b,stroke-width:2px
+    classDef integration fill:#f5f5f5,stroke:#616161,stroke-width:2px
+    
+    class SETUP,NEXT,TS,TAILWIND,NEXTAUTH,PRISMA,MIGRATIONS foundation
+    class AI_SERVICE,PROMPT_ENGINE,AI_COACH,SPENDING_ANALYSIS,NECESSITY_SCORER ai_core
+    class TRANSACTION_CRUD,CATEGORY_MGMT,BUDGET_TRACKING,DASHBOARD,PRE_PURCHASE features
+    class ANALYTICS_ENGINE,BEHAVIORAL_ANALYSIS,PREDICTIVE_MODELING,FINANCIAL_INSIGHTS analytics
+    class MOBILE_INTERFACE,CHAT_INTERFACE,PWA_SETUP,VOICE_INPUT interface
+    class SECURITY_LAYER,PERFORMANCE_OPT,PRODUCTION_DEPLOY,MONITORING_SETUP production
+    class USERS_TABLE,TRANSACTIONS_TABLE,CATEGORIES_TABLE,AI_INTERACTIONS database
+    class OPENAI_API,PLAID_API,VERCEL_PLATFORM,OCR_SERVICE integration
