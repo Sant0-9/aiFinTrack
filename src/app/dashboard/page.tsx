@@ -123,7 +123,6 @@ export default function DashboardPage() {
           <StatsCard
             title="Current Balance"
             value={formatCurrency(stats.currentBalance)}
-            icon={<span className="text-primary-600">💰</span>}
             trend={{
               value: 5.2,
               label: 'vs last month',
@@ -134,20 +133,17 @@ export default function DashboardPage() {
           <StatsCard
             title="Monthly Income"
             value={formatCurrency(stats.totalIncome)}
-            icon={<span className="text-green-600">📈</span>}
           />
 
           <StatsCard
             title="Monthly Expenses"
             value={formatCurrency(stats.totalExpenses)}
-            icon={<span className="text-red-600">📉</span>}
           />
 
           <StatsCard
             title="Today's Spending"
             value={formatCurrency(stats.todaySpent)}
             subtitle={`This week: ${formatCurrency(stats.weekSpent)}`}
-            icon={<span className="text-orange-600">🛍️</span>}
           />
         </div>
 
@@ -211,16 +207,16 @@ export default function DashboardPage() {
               <h3 className="text-lg font-semibold text-gray-900 mb-4">Quick Actions</h3>
               <div className="space-y-3">
                 <Button variant="ghost" className="w-full justify-start">
-                  💬 Ask AI Financial Coach
+                  Ask AI Financial Coach
                 </Button>
                 <Button variant="ghost" className="w-full justify-start">
-                  📊 View Analytics
+                  View Analytics
                 </Button>
                 <Button variant="ghost" className="w-full justify-start">
-                  🎯 Set New Goal
+                  Set New Goal
                 </Button>
                 <Button variant="ghost" className="w-full justify-start">
-                  📱 Mobile App Coming Soon
+                  Mobile App Coming Soon
                 </Button>
               </div>
             </div>

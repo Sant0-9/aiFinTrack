@@ -45,7 +45,6 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
             <div className="card">
-              <div className="text-3xl mb-3">🤖</div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">AI Financial Coach</h3>
               <p className="text-gray-600 text-sm">
                 Get personalized advice before every purchase. Our AI prevents overspending and celebrates your wins.
@@ -53,7 +52,6 @@ export default function Home() {
             </div>
 
             <div className="card">
-              <div className="text-3xl mb-3">📊</div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Smart Analytics</h3>
               <p className="text-gray-600 text-sm">
                 Understand your spending patterns with AI-powered insights and predictions.
@@ -61,7 +59,6 @@ export default function Home() {
             </div>
 
             <div className="card">
-              <div className="text-3xl mb-3">🎯</div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Goal Achievement</h3>
               <p className="text-gray-600 text-sm">
                 Set and achieve savings goals with personalized strategies and motivation.
@@ -69,7 +66,6 @@ export default function Home() {
             </div>
 
             <div className="card">
-              <div className="text-3xl mb-3">🚨</div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Real-time Alerts</h3>
               <p className="text-gray-600 text-sm">
                 Get warned before overspending with intelligent budget monitoring.
@@ -77,7 +73,6 @@ export default function Home() {
             </div>
 
             <div className="card">
-              <div className="text-3xl mb-3">📱</div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Mobile First</h3>
               <p className="text-gray-600 text-sm">
                 Beautiful, responsive design that works perfectly on all devices.
@@ -85,7 +80,6 @@ export default function Home() {
             </div>
 
             <div className="card">
-              <div className="text-3xl mb-3">🔒</div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Secure & Private</h3>
               <p className="text-gray-600 text-sm">
                 Your financial data is encrypted and never shared. Privacy first.

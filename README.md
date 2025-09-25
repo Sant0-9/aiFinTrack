@@ -2,39 +2,39 @@
 
 A modern, intelligent finance tracker with AI coaching that helps prevent overspending and achieve savings goals.
 
-## 🌟 Features
+## Features
 
-### 🤖 AI Financial Coach
+### AI Financial Coach
 - **Pre-purchase consultation**: Ask "Should I buy this?" before making purchases
 - **Personalized advice**: Context-aware recommendations based on your financial situation
 - **Smart categorization**: Automatic transaction categorization with necessity scoring
 - **Spending pattern analysis**: AI identifies trends and provides insights
 
-### 📊 Real-time Budget Tracking
+### Real-time Budget Tracking
 - **Live spending monitoring**: Track daily, weekly, and monthly expenses
 - **Visual progress indicators**: See budget usage with color-coded alerts
 - **Category-wise budgeting**: Set and monitor budgets for different spending categories
 - **Goal progress tracking**: Monitor savings goals with milestone celebrations
 
-### 🚨 Intelligent Alerts & Prevention
+### Intelligent Alerts & Prevention
 - **Progressive warnings**: Gentle reminders → firm warnings → emergency stops
 - **Context-aware notifications**: Alerts consider time, location, and spending patterns
 - **Achievement celebrations**: Motivational messages for staying on track
 - **Overspending prevention**: Real-time intervention before budget exceeded
 
-### 💬 Conversational AI Interface
+### Conversational AI Interface
 - **Natural language queries**: Chat with your AI financial coach
 - **Personalized responses**: AI remembers your financial history and goals
 - **Financial education**: Bite-sized tips and strategies for better money management
 - **24/7 availability**: Get advice whenever you need it
 
-### 📱 Modern User Experience
+### Modern User Experience
 - **Mobile-first design**: Beautiful, responsive interface for all devices
 - **Progressive Web App**: Install on mobile devices for native-like experience
 - **Touch-optimized**: Smooth gestures and interactions
 - **Dark/light mode**: Adaptive interface (coming soon)
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Frontend**: Next.js 14 with TypeScript
 - **Styling**: Tailwind CSS with custom design tokens
@@ -47,7 +47,7 @@ A modern, intelligent finance tracker with AI coaching that helps prevent oversp
 - **Animations**: Framer Motion
 - **Deployment**: Vercel
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -106,7 +106,7 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) to see the application.
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 src/
@@ -130,7 +130,7 @@ src/
 └── hooks/                # Custom React hooks
 ```
 
-## 🎯 Key Features Implementation
+## Key Features Implementation
 
 ### AI Financial Coach System
 
@@ -159,7 +159,7 @@ Comprehensive financial overview with:
 - **Trend analysis**: Spending patterns and predictions
 - **Goal tracking**: Visual progress toward savings objectives
 
-## 🧪 Testing
+## Testing
 
 Run the test suite:
 ```bash
@@ -176,7 +176,7 @@ Linting:
 npm run lint
 ```
 
-## 🚀 Deployment
+## Deployment
 
 ### Vercel (Recommended)
 
@@ -199,7 +199,7 @@ npm run build
 npm start
 ```
 
-## 📱 Progressive Web App
+## Progressive Web App
 
 The application is PWA-ready with:
 
@@ -208,14 +208,14 @@ The application is PWA-ready with:
 - **Responsive design**: Works seamlessly across all devices
 - **Touch optimizations**: Native-like mobile experience
 
-## 🔐 Security & Privacy
+## Security & Privacy
 
 - **Data encryption**: All financial data encrypted at rest
 - **Secure authentication**: OAuth providers with session management
 - **API protection**: Rate limiting and input validation
 - **Privacy first**: No data sharing with third parties
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch: `git checkout -b feature/amazing-feature`
@@ -223,11 +223,11 @@ The application is PWA-ready with:
 4. Push to branch: `git push origin feature/amazing-feature`
 5. Open a Pull Request
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - OpenAI for providing the AI capabilities
 - Vercel for hosting and database services
@@ -235,4 +235,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Built with ❤️ using Next.js 14, OpenAI, and modern web technologies.**
+**Built using Next.js 14, OpenAI, and modern web technologies.**
